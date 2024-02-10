@@ -8,7 +8,7 @@ export class Cart{
     @Prop()
     userId: number;
 
-    @Prop()
+    @Prop({type: Object})
     cartItems: CartItemsDto;
 }
 
