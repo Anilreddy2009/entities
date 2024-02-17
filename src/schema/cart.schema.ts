@@ -6,7 +6,7 @@ export type CartDocument = Cart & Document;
 @Schema()
 export class Cart{
     @Prop()
-    userId: number;
+    userId: string; // phone number is treated as user id
 
     @Prop({type: Object})
     cartItems: CartItemsDto;
