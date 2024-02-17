@@ -8,8 +8,8 @@ export class Cart{
     @Prop()
     userId: string; // phone number is treated as user id
 
-    @Prop({type: Object})
-    cartItems: CartItemsDto;
+    @Prop({default: []})
+    cartItems: CartItemsDto[];
 }
 
 export const CartSchema = SchemaFactory.createForClass(Cart);
