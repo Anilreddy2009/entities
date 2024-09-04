@@ -1,3 +1,4 @@
 export enum Queues {
-    CART = 'CART'
+    CART = 'CART',
+    USER = 'USER'
 }
